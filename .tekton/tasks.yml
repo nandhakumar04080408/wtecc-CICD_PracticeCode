@@ -1,0 +1,7 @@
+- name: cleanup
+  taskSpec:
+    steps:
+      - name: cleanup
+        image: alpine
+        script: |
+          rm -rf /workspace/output/*
